@@ -1,0 +1,239 @@
+/* google font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap");
+
+/* layout */
+:root {
+  --primary: #1aac83;
+  --error: #e7195a;
+}
+body {
+  background: hsl(0, 0%, 21%);
+  margin: 0;
+  font-family: "Poppins";
+}
+header {
+  background: #000000;
+}
+header .container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header a {
+  color: #cacaca;
+  text-decoration: none;
+}
+.pages {
+  max-width: 1400px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+/* homepage */
+.home {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 50px;
+}
+.workout-details {
+  background: #005e2a;
+  border-radius: 4px;
+  margin: 20px auto;
+  padding: 20px;
+  position: relative;
+  transition: 0.25s ease;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.workout-details:hover {
+  background: rgb(199, 255, 199);
+  border-radius: 4px;
+  margin: 20px auto;
+  transition: 0.25s ease;
+  padding: 20px;
+  position: relative;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.workout-details:hover p {
+  color: #000000;
+}
+
+.workout-details h4 {
+  margin: 0 0 10px 0;
+  font-size: 1.2em;
+  color: var(--primary);
+}
+
+.workout-details p {
+  margin: 0;
+  font-size: 0.9em;
+  color: #ffffff;
+}
+.workout-details span {
+  white-space: pre;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  background: #f1f1f1;
+  padding: 6px;
+  border-radius: 10px;
+  transition: 0.25s;
+  color: #ffffff;
+}
+
+.workout-details span:hover {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  transition: 0.25s;
+  background: #ff0000;
+  padding: 6px;
+  border-radius: 20px;
+  color: #fff;
+}
+
+.workouts {
+  margin-bottom: 50px;
+}
+
+.pages {
+  margin-bottom: 50px;
+}
+
+/* new workout form */
+label,
+input {
+  display: block;
+}
+
+input {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+form button {
+  background: var(--primary);
+  border: 0;
+  color: #fff;
+  margin: 0 auto; /* center it horizontally */
+  margin-top: 20px;
+  display: flex;
+  padding: 10px;
+  font-family: "Poppins";
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form label {
+  color: #fff;
+}
+
+form h3 {
+  color: #fff;
+}
+
+form input {
+  background-color: #1b1b1b;
+  color: white;
+}
+
+div.error {
+  padding: 10px;
+  background: #ffefef;
+  border: 1px solid var(--error);
+  color: var(--error);
+  border-radius: 4px;
+  margin: 20px 0;
+}
+
+input.error {
+  border: 1px solid var(--error);
+}
+
+/* navbar */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav span {
+  color: white;
+  margin-left: 10px;
+}
+
+.nav-info {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+nav img {
+  width: 30px;
+  align-self: center;
+  border: grey solid 2px;
+  border-radius: 50%;
+}
+
+nav a {
+  margin-left: 20px;
+}
+
+nav button {
+  background: #fff;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+  padding: 6px 10px;
+  margin-left: 50px;
+  border-radius: 4px;
+  font-family: "Poppins";
+  cursor: pointer;
+  font-size: 1em;
+}
+
+/* auth forms */
+form.signup,
+form.login {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #1b1b1b;
+  color: white;
+  border-radius: 4px;
+}
+
+.empty-container {
+  margin-top: 150px;
+  background-color: rgba(31, 31, 31, 0.5);
+  color: white;
+  padding: 10px;
+  align-items: center;
+  text-align: center;
+  border: solid, 2px;
+  border-radius: 20px;
+}
+
+footer {
+  position: fixed;
+  color: #fff;
+  backdrop-filter: blur(80px);
+  background-color: #00000034;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
